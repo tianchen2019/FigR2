@@ -482,8 +482,8 @@ chunk_CCA <- function(CCA_1,
   cat("Difference in cell count between 2 datasets: ",nrow(bigger) - nrow(smaller),"\n")
 
   if(is.null(chunkSize))
-    chunkSize <- nrow(smaller)
-
+    #chunkSize <- nrow(smaller)
+  chunkSize <-10000 
   cat("Chunking larger dataset to match smaller datset ..\n")
   cat("Chunk size n = ",chunkSize," cells\n")
 
