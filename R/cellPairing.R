@@ -483,7 +483,7 @@ chunk_CCA <- function(CCA_1,
 
   if(is.null(chunkSize))
     #chunkSize <- nrow(smaller)
-     chunkSize <- 30000
+     chunkSize <- 20000
   cat("Chunking larger dataset to match smaller datset ..\n")
   cat("Chunk size n = ",chunkSize," cells\n")
 
